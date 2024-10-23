@@ -1,21 +1,23 @@
 <template>
-  <div class="header-nav">
-    <div class="nav-v2ex">
-      <div class="logo">V2EX</div>
-      <div>
-        <el-input
-          class="search-value"
-          v-model="searchValue"
-          style="width: 240px"
-        >
-          <template #prefix>
-            <el-icon class="el-input__icon"><search /></el-icon>
-          </template>
-        </el-input>
+  <div class="header-content">
+    <div class="header-nav">
+      <div class="nav-v2ex">
+        <div class="logo">V2EX</div>
+        <div>
+          <el-input
+            class="search-value"
+            v-model="searchValue"
+            style="width: 240px"
+          >
+            <template #prefix>
+              <el-icon class="el-input__icon"><search /></el-icon>
+            </template>
+          </el-input>
+        </div>
       </div>
-    </div>
-    <div class="nav">
-      <span class="nav-item" v-for="nav in navs">{{ nav.title }}</span>
+      <div class="nav">
+        <span class="nav-item" v-for="nav in navs">{{ nav.title }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -34,6 +36,10 @@ const searchValue = ref("")
 </script>
 
 <style lang="scss" scoped>
+.header-content {
+  background: #fff;
+  border-bottom: 1px solid #cfcfcf;
+}
 .header-nav {
   display: flex;
   align-items: center;
@@ -41,7 +47,8 @@ const searchValue = ref("")
   height: 100%;
   background: #fff;
   width: 100%;
-  padding: 0 50px;
+  width: 1200px;
+  margin: auto;
   .nav-v2ex {
     display: flex;
     align-items: center;

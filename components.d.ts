@@ -8,9 +8,14 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ElAffix: typeof import('element-plus/es')['ElAffix']
+    ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElChecktag: typeof import('element-plus/es')['ElChecktag']
+    ElCheckTag: typeof import('element-plus/es')['ElCheckTag']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElInput: typeof import('element-plus/es')['ElInput']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+    ElTag: typeof import('element-plus/es')['ElTag']
     Header: typeof import('./src/components/layout/header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
